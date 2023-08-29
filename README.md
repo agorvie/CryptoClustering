@@ -1,19 +1,19 @@
 ## CryptoClustering
 In this challenge, I’ll use my knowledge of Python and unsupervised learning to predict if cryptocurrencies are affected by 24-hour or 7-day price changes.
 
-# Instructions
+### Instructions
 Renamed the Crypto_Clustering_starter_code.ipynb file as Crypto_Clustering.ipynb.
 
 Loaded the crypto_market_data.csv into a DataFrame.
 
 Got the summary statistics and plot the data to see what the data looks like before proceeding.
 
-# Preparing the Data
+### Preparing the Data
 Used the StandardScaler() module from scikit-learn to normalize the data from the CSV file.
 
 Created a DataFrame with the scaled data and set the "coin_id" index from the original DataFrame as the index for the new DataFrame.
 
-# Found the Best Value for k Using the Original Scaled DataFrame
+### Found the Best Value for k Using the Original Scaled DataFrame
 Used the elbow method to find the best value for k using the following steps:
 
 Created a list with the number of k values from 1 to 11.
@@ -23,7 +23,7 @@ Created a dictionary with the data to plot the elbow curve.
 Plotted a line chart with all the inertia values computed with the different values of k to visually identify the optimal value for k.
 Answered the following question in the notebook: What is the best value for k?
 
-# Clustered Cryptocurrencies with K-means Using the Original Scaled Data
+### Clustered Cryptocurrencies with K-means Using the Original Scaled Data
 Used the following steps to cluster the cryptocurrencies for the best value for k on the original scaled data:
 
 Initialized the K-means model with the best value for k.
@@ -35,7 +35,7 @@ Set the x-axis as "PC1" and the y-axis as "PC2".
 Colored the graph points with the labels found using K-means.
 Add the "coin_id" column in the hover_cols parameter to identify the cryptocurrency represented by each data point.
 
-# Optimized Clusters with Principal Component Analysis
+### Optimized Clusters with Principal Component Analysis
 Using the original scaled DataFrame, performed a PCA and reduced the features to three principal components.
 
 Retrieved the explained variance to determine how much information can be attributed to each principal component and then answered the following question in the notebook:
@@ -43,7 +43,7 @@ Retrieved the explained variance to determine how much information can be attrib
 What is the total explained variance of the three principal components?
 Created a new DataFrame with the PCA data and set the "coin_id" index from the original DataFrame as the index for the new DataFrame.
 
-# Found the Best Value for k Using the PCA Data
+### Found the Best Value for k Using the PCA Data
 Used the elbow method on the PCA data to find the best value for k using the following steps:
 
 Created a list with the number of k-values from 1 to 11.
@@ -55,7 +55,7 @@ Answered the following question in the notebook:
 What is the best value for k when using the PCA data?
 Does it differ from the best k value found using the original data?
 
-# Cluster Cryptocurrencies with K-means Using the PCA Data
+### Cluster Cryptocurrencies with K-means Using the PCA Data
 Used the following steps to cluster the cryptocurrencies for the best value for k on the PCA data:
 
 Initialized the K-means model with the best value for k.
