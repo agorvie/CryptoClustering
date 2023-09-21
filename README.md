@@ -25,6 +25,8 @@ Welcome to the CryptoClustering project! In this challenge, I will explore the w
    - Used the `StandardScaler()` module from scikit-learn to normalize the data from the CSV file.
    - Created a DataFrame with the scaled data and set the "coin_id" index from the original DataFrame as the index for the new DataFrame.
 
+<img width="488" alt="image" src="https://github.com/agorvie/CryptoClustering/assets/122469792/d7d7492c-704c-4cc3-a713-be42c6616064">
+
 ## Finding the Best Value for k Using the Original Scaled DataFrame
 
 4. **Elbow Method**
@@ -35,6 +37,8 @@ Welcome to the CryptoClustering project! In this challenge, I will explore the w
      - Created a dictionary with data for plotting the elbow curve.
      - Plotted a line chart displaying all the inertia values calculated for different values of k to visually identify the best value for k.
    - Answered the following question in the notebook: What is the best value for k?
+     
+<img width="437" alt="image" src="https://github.com/agorvie/CryptoClustering/assets/122469792/6de81bc4-a30b-44ee-8eb1-fcd9631b7064">
 
 5. **Clustering Cryptocurrencies with K-means**
    - Clustered the cryptocurrencies using the best value for k obtained from the elbow method on the original scaled data with the following steps:
@@ -44,6 +48,9 @@ Welcome to the CryptoClustering project! In this challenge, I will explore the w
      - Created a copy of the original data and add a new column with the predicted clusters.
      - Created a scatter plot using hvPlot, setting "PC1" as the x-axis and "PC2" as the y-axis. Colored the graph points with the labels found using K-means. Included the "coin_id" column in the hover information to identify 
        the cryptocurrency represented by each data point.
+
+
+<img width="453" alt="image" src="https://github.com/agorvie/CryptoClustering/assets/122469792/c1241205-f77f-4f91-af67-c7e59ef99f7b">
 
 ## Optimizing Clusters with Principal Component Analysis (PCA)
 
@@ -62,6 +69,9 @@ Welcome to the CryptoClustering project! In this challenge, I will explore the w
      - Created a dictionary with data for plotting the elbow curve.
      - Plotted a line chart displaying all the inertia values calculated for different values of k to visually identify the best value for k.
    - Answered the following questions in the notebook: What is the best value for k when using the PCA data? Does it differ from the best k value found using the original data?
+
+
+<img width="434" alt="image" src="https://github.com/agorvie/CryptoClustering/assets/122469792/9d6360e3-6ff2-41ad-9623-2fa170835608">
 
 ## Cluster Cryptocurrencies with K-means Using the PCA Data
 
